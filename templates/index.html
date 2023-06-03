@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Titanic Ship Prediction</title>
+	<style>
+		body {
+		    background-image: url("https://images.unsplash.com/photo-1580166463495-ab4d21922c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+		    background-repeat: no-repeat;
+		    background-size: cover;
+        }
+        h1, label {
+            text-align: center;
+        }
+		
+    </style>
+</head>
+<body>
+        
+     <h1>Titanic Ship Prediction</h1>
+     <form method="GET" action="/predict_charges">
+        <div id='Pclass'></div>
+        <label>Pclass:</label>
+        <input type="text" name='Pclass'>
+        </select>
+    </div>
+        <br>
+        <br>
+             <label>Gender:</label>
+             <input type="text" name="Gender">
+             </select>
+        <br>
+        <br>
+             <label>Age:</label>
+             <input type="text" name="Age">
+             </select>
+        <br>
+        <br>
+             <label>SibSp:</label>
+             <input type="text" name="SibSp">
+             </select>
+        <br>
+        <br>
+             <label>Parch:</label>
+             <input type="text" name="Parch">
+             </select>
+        <br>
+        <br>
+             <label>Fare:</label>
+             <input type="text" name="Fare">
+             </select>
+        <br>
+        <br>
+             <label>Embarked:</label>
+             <input type="text" name="Embarked">
+             </select>
+         <br>
+         <br>
+	<input type = "submit" value = "SUBMIT">
+        
+        <br>
+        <br>
+
+
+	</form>
+	<p><b>{{prediction}}.</b></p>
+        
+</body>
+</html>
